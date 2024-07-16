@@ -1,0 +1,46 @@
+.navbar {
+    background: #2c2834;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navigation {
+    font-weight: bold; 
+    font-size: 17px;
+    color: #d3d3d3;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navigation:hover {
+    color: #80248d;
+}
+
+.rightside {
+    margin-left: 860px;
+    margin-top: -2px;
+}
+
+.leftside {
+    margin-left: 110px;
+}
+
+.naviicon {
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+    .leftside {
+        display: none;
+    }
+
+    .rightside {
+        margin-left: auto; 
+        margin-right: 0;
+        padding-right: 50px;
+    }
+}

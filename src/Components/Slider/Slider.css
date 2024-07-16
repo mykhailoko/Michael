@@ -1,0 +1,41 @@
+.slider {
+    background-image: url("../../Assets/projectsback.png");
+    background-size: cover;
+    padding-top: 30px;
+    height: 620px;
+}
+
+.titleslider {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 35px;
+    color: #d3d3d3;
+    font-weight: bold; 
+    margin-bottom: 20px;
+    width: 160px;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2s steps(16),
+        cursor .5s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+.titleslider>span {
+    color: #80248d;
+}
+
+@media only screen and (max-width: 900px) {
+    .titleslider {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
