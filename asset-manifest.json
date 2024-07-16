@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Michael/static/css/main.41ad6ab3.css",
-    "main.js": "/Michael/static/js/main.a088d46b.js",
+    "main.js": "/Michael/static/js/main.eded889d.js",
     "static/media/gojo.png": "/Michael/static/media/gojo.437a0dd89f27c77f3fee.png",
     "static/media/gojo-about.png": "/Michael/static/media/gojo-about.4617a50736666444addc.png",
     "static/media/headerback.png": "/Michael/static/media/headerback.bb292a2b12f7299ba8fa.png",
@@ -9,10 +9,10 @@
     "static/media/projectsback.png": "/Michael/static/media/projectsback.55a6fdd0e697b0444d84.png",
     "index.html": "/Michael/index.html",
     "main.41ad6ab3.css.map": "/Michael/static/css/main.41ad6ab3.css.map",
-    "main.a088d46b.js.map": "/Michael/static/js/main.a088d46b.js.map"
+    "main.eded889d.js.map": "/Michael/static/js/main.eded889d.js.map"
   },
   "entrypoints": [
     "static/css/main.41ad6ab3.css",
-    "static/js/main.a088d46b.js"
+    "static/js/main.eded889d.js"
   ]
 }
