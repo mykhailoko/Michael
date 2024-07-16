@@ -66,10 +66,12 @@
         width: 310px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 7%;
     }
 
     .secondtext {
         font-size: 17px;
+        margin-bottom: 7%;
     }
 
     .mainpart {
@@ -78,15 +80,16 @@
         align-items: center;
         justify-content: center;
         display: block;
-        padding-bottom: 60px;
+        padding-bottom: 140px;
     }
 
     #gojo-hidden {
-        width: 55%;
-        height: 55%;
+        width: 75%;
+        height: 75%;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 7%;
     }
 
     #gojo {

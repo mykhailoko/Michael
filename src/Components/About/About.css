@@ -88,9 +88,9 @@
 
 @media only screen and (max-width: 900px) {
     #gojo-about {
-        margin-left: 20%;
-        width: 60%;
-        height: 60%
+        margin-left: 17%;
+        width: 65%;
+        height: 65%
     }
 
     .aboutmain {
@@ -99,6 +99,7 @@
         align-items: center;
         justify-content: center;
         display: block;
+        padding-bottom: 40px;
     }
 
     .technologies {
