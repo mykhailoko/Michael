@@ -29,7 +29,7 @@ const About = () => {
               </div>
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">Unity, C</h4>
+                <h4 className="techno">Unity, C#</h4>
               </div>
             </div>
 
