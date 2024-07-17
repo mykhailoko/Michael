@@ -1,11 +1,13 @@
 .navbar {
     background: #2c2834;
+    background-size: cover;
     padding-bottom: 10px;
     padding-top: 20px;
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 .navigation {
