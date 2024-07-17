@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Michael/static/css/main.41ad6ab3.css",
-    "main.js": "/Michael/static/js/main.eded889d.js",
+    "main.css": "/Michael/static/css/main.cab1f1cd.css",
+    "main.js": "/Michael/static/js/main.cd7e2799.js",
     "static/media/gojo.png": "/Michael/static/media/gojo.437a0dd89f27c77f3fee.png",
     "static/media/gojo-about.png": "/Michael/static/media/gojo-about.4617a50736666444addc.png",
     "static/media/headerback.png": "/Michael/static/media/headerback.bb292a2b12f7299ba8fa.png",
     "static/media/aboutback.png": "/Michael/static/media/aboutback.6b577262a2f2a5934fc1.png",
     "static/media/projectsback.png": "/Michael/static/media/projectsback.55a6fdd0e697b0444d84.png",
     "index.html": "/Michael/index.html",
-    "main.41ad6ab3.css.map": "/Michael/static/css/main.41ad6ab3.css.map",
-    "main.eded889d.js.map": "/Michael/static/js/main.eded889d.js.map"
+    "main.cab1f1cd.css.map": "/Michael/static/css/main.cab1f1cd.css.map",
+    "main.cd7e2799.js.map": "/Michael/static/js/main.cd7e2799.js.map"
   },
   "entrypoints": [
-    "static/css/main.41ad6ab3.css",
-    "static/js/main.eded889d.js"
+    "static/css/main.cab1f1cd.css",
+    "static/js/main.cd7e2799.js"
   ]
 }
