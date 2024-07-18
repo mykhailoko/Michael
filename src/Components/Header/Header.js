@@ -3,10 +3,12 @@ import Gojo from '../../Assets/gojo.png'
 import Button from '../../Assets/button.png'
 import ButtonHover from '../../Assets/button-hover.png'
 import { useState } from 'react';
+import { useTranslation  } from 'react-i18next';
 
 const Header = () => {
-  const [buttonSrc, setButtonSrc] = useState(Button);
+  const[t] = useTranslation("global");
 
+  const [buttonSrc, setButtonSrc] = useState(Button);
   const changeImage = (hover) => {
     if (hover) {
       setButtonSrc(ButtonHover);
@@ -20,10 +22,9 @@ const Header = () => {
       <div className="mainpart">
           <div className="mainparttext">
               <img id="gojo-hidden" src={Gojo} alt="gojo satoru" />
-              <h2 className="firsttext">hi, I'm <span>michael</span>.</h2>
+              <h2 className="firsttext">hi, I'm <span>Michael</span>.</h2>
               <p className="secondtext">
-                  I am a software engineer in my second year of <br/> university. I love creating 
-                  websites, apps, and <br/> games, enjoying every challenge and the <br/> creative process.
+                {t("header.message")}
               </p>
               <a href="https://github.com/mykhailoko" target="_blank" id="checkout" rel="noreferrer">
                 <img 

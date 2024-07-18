@@ -1,7 +1,7 @@
 .navbar {
     background: #2c2834;
     background-size: cover;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 20px;
     display: flex;
     position: fixed;
@@ -23,7 +23,7 @@
 }
 
 .rightside {
-    margin-left: 860px;
+    margin-left: 820px;
     margin-top: -2px;
 }
 
@@ -32,8 +32,30 @@
 }
 
 .naviicon {
-    margin-left: 20px;
+    margin-left: 10px;
 }
+
+.languageside {
+    margin-left: 30px;
+    margin-top: -3px;
+}
+
+.select {
+    background-color: transparent;
+    color: #d3d3d3;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+  }
+  
+.option {
+    background-color: #2f2c37;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
 @media only screen and (max-width: 900px) {
     .leftside {
@@ -43,6 +65,10 @@
     .rightside {
         margin-left: auto; 
         margin-right: 0;
-        padding-right: 50px;
+        padding-right: 10px;
+    }
+
+    .languageside {
+        margin-right: 20px;
     }
 }

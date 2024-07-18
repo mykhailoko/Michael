@@ -48,6 +48,11 @@
     font-weight: bold;
 }
 
+.highlight {
+    color: #80248d;
+    font-weight: bold;
+}
+
 #gojo-about {
     margin-left: 110px;
 }

@@ -4,8 +4,14 @@ import GithubHover from '../../Assets/github-hover.png'
 import Telegram from '../../Assets/telegram.png'
 import TelegramHover from '../../Assets/telegram-hover.png'
 import { useState, useEffect } from 'react';
+import { useTranslation  } from 'react-i18next';
 
 const Navbar = () => {
+  const[t, i18n] = useTranslation("global");
+  const handleChangeLanguage = (lang) => {
+      i18n.changeLanguage(lang);
+  };
+
   const [githubSrc, setGithubSrc] = useState(Github);
   const changeImage = (hover) => {
     if (hover) {
@@ -51,9 +57,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="leftside">
-        <a className="navigation" href="#home">Home</a>
-        <a className="navigation" href="#about">About</a>
-        <a className="navigation" href="#projects">Projects</a>
+        <a className="navigation" href="#home">{t("navbar.home")}</a>
+        <a className="navigation" href="#about">{t("navbar.about")}</a>
+        <a className="navigation" href="#projects">{t("navbar.projects")}</a>
       </div>
       <div className="rightside">
         <a className="naviicon" href="https://github.com/mykhailoko" target="_blank" rel="noreferrer">
@@ -72,6 +78,12 @@ const Navbar = () => {
             alt="telegram" 
           />
         </a>
+      </div>
+      <div className="languageside">
+        <select className="select" onChange={(e) => handleChangeLanguage(e.target.value)}>
+            <option className="option" value="en">EN</option>
+            <option className="option" value="ru">RU</option>
+          </select>
       </div>
     </div>
   )

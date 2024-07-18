@@ -1,8 +1,11 @@
 import './About.css'
 import GojoAbout from '../../Assets/gojo-about.png'
 import Point from '../../Assets/point.png'
+import { useTranslation  } from 'react-i18next';
 
 const About = () => {
+  const[t] = useTranslation("global");
+
   return (
     <div className="about" id="about">
       <div className="aboutmain">
@@ -11,10 +14,7 @@ const About = () => {
           <h2 className="title">About <span>me</span>.</h2>
 
           <p className="abouttext">
-            I am a software engineer in my second year of
-            university. I love creating websites, apps, and
-            games, enjoying every challenge and the
-            creative process. Technologies I've worked with:
+            {t("about.maintext")}
           </p>
 
           <div className="tech">
@@ -49,9 +49,7 @@ const About = () => {
             </div>
           </div>
 
-          <p className="abouttext">
-            Outside of my studies, I enjoy watching anime, especially <span>Jujutsu Kaisen</span> and Demon Slayer.
-          </p>
+          <p className="abouttext" dangerouslySetInnerHTML={{ __html: t('about.animetext') }} />
         </div>
       </div>
     </div>

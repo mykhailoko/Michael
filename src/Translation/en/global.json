@@ -1,0 +1,21 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects"
+    },
+    "header": {
+        "message": "I am a software engineer in my second year of university. I love creating websites, apps, and games, enjoying every challenge and the creative process."
+    },
+    "about": {
+        "maintext": "I am a software engineer in my second year of university. I love creating websites, apps, and games, enjoying every challenge and the creative process. Technologies I've worked with:",
+        "animetext": "Outside of my studies, I enjoy watching anime, especially <span class='highlight'>Jujutsu Kaisen</span> and Demon Slayer."
+    },
+    "projects": {
+        "pygame": "Dino Adventure is a Python game using Pygame, inspired by Chrome's offline dinosaur game, but with added unique features.",
+        "website": "This site was created using HTML and CSS, with a custom design created in Photoshop. Download the Dino Adventure game here.",
+        "unity": "Dino Adventure is made with Unity, featuring gameplay mechanics and interactive elements scripted in C#.",
+        "michael": "Built with React.js, this site showcases my programming projects, skills, and accomplishments.",
+        "leetcode": "I also enjoy solving LeetCode problems, which help me enhance my coding skills through various programming challenges."
+    }
+}

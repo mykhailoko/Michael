@@ -49,6 +49,7 @@
     color: #d3d3d3;
     margin-top: 0px;
     margin-bottom: 27px;
+    width: 450px;
 }
 
 #gojo-hidden {
@@ -70,8 +71,11 @@
     }
 
     .secondtext {
-        font-size: 17px;
+        font-size: 120%;
         margin-bottom: 7%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%
     }
 
     .mainpart {

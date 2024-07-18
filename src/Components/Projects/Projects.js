@@ -3,8 +3,11 @@ import FolderBack from '../../Assets/folder.png'
 import FolderIcon from '../../Assets/foldericon.png'
 import GithubIcon from '../../Assets/github.png'
 import LinkIcon from '../../Assets/linkicon.png'
+import { useTranslation  } from 'react-i18next';
 
 const Projects = () => {
+  const[t] = useTranslation("global");
+
   return (
     <div className="projects" id="projects"> 
         <h2 className="titleprojects">Projects<span>.</span></h2>
@@ -20,8 +23,7 @@ const Projects = () => {
             </a>
             <h2 className="foldertitle">Dino Adventure with pygame</h2>
             <p className="foldertext">
-              Dino Adventure is a Python game using Pygame, inspired by 
-              Chrome's offline dinosaur game, but with added unique features.
+              {t("projects.pygame")}
             </p>
             <p className="foldertechno">
               Python, Pygame
@@ -39,8 +41,7 @@ const Projects = () => {
             </a>
             <h2 className="foldertitle">Dino Adventure website</h2>
             <p className="foldertext">
-              This site was created using HTML and CSS, with a custom design created 
-              in Photoshop. Download the Dino Adventure game here.
+              {t("projects.website")}
             </p>
             <p className="foldertechno">
               HTML, CSS, Photoshop
@@ -55,7 +56,7 @@ const Projects = () => {
             </a>
             <h2 className="foldertitle">Dino Adventure with Unity</h2>
             <p className="foldertext">
-              Dino Adventure is made with Unity, featuring gameplay mechanics and interactive elements scripted in C#.
+             {t("projects.unity")}
             </p>
             <p className="foldertechno">
               Unity, C#
@@ -75,7 +76,7 @@ const Projects = () => {
             </a>
             <h2 className="foldertitle">Portfolio website</h2>
             <p className="foldertextsmall">
-              Built with React.js, this site showcases my programming projects, skills, and accomplishments.
+             {t("projects.michael")}
             </p>
             <p className="foldertechnosmall">
               React.js, Photoshop
@@ -93,7 +94,7 @@ const Projects = () => {
             </a>
             <h2 className="foldertitle">Leetcode</h2>
             <p className="foldertextsmall">
-              I enjoy solving LeetCode problems, which help me enhance my coding skills through various programming challenges.
+              {t("projects.leetcode")}
             </p>
             <img className="folderback" src={FolderBack} alt="folder" />
           </div>
