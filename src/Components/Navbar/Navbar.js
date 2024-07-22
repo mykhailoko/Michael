@@ -3,10 +3,21 @@ import Github from '../../Assets/github.png'
 import GithubHover from '../../Assets/github-hover.png'
 import Telegram from '../../Assets/telegram.png'
 import TelegramHover from '../../Assets/telegram-hover.png'
+import Reorder from '../../Assets/reorder.png'
 import { useState, useEffect } from 'react';
 import { useTranslation  } from 'react-i18next';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen((open) => !open);
+  }
+
+  const handleMenuClick = () => {
+    setIsOpen(false);
+  };
+
   const[t, i18n] = useTranslation("global");
   const handleChangeLanguage = (lang) => {
       i18n.changeLanguage(lang);
@@ -56,10 +67,11 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="leftside">
-        <a className="navigation" href="#home">{t("navbar.home")}</a>
-        <a className="navigation" href="#about">{t("navbar.about")}</a>
-        <a className="navigation" href="#projects">{t("navbar.projects")}</a>
+      <img className="reorder" src={Reorder} alt="reorder" onClick={toggleMenu} />
+      <div className={`leftside ${isOpen ? "is-open" : ""}`}>
+        <a className="navigation" href="#home" onClick={handleMenuClick}>{t("navbar.home")}</a>
+        <a className="navigation" href="#about" onClick={handleMenuClick}>{t("navbar.about")}</a>
+        <a className="navigation" href="#projects" onClick={handleMenuClick}>{t("navbar.projects")}</a>
       </div>
       <div className="rightside">
         <a className="naviicon" href="https://github.com/mykhailoko" target="_blank" rel="noreferrer">
