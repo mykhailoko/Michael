@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Michael/static/css/main.ca59a0a8.css",
-    "main.js": "/Michael/static/js/main.e0c6aa4c.js",
-    "static/media/gojo.png": "/Michael/static/media/gojo.437a0dd89f27c77f3fee.png",
+    "main.css": "/Michael/static/css/main.efccd8c9.css",
+    "main.js": "/Michael/static/js/main.0d85fac5.js",
+    "static/media/gojo.png": "/Michael/static/media/gojo.63115b965794e2321ee4.png",
     "static/media/gojo-about.png": "/Michael/static/media/gojo-about.4617a50736666444addc.png",
     "static/media/headerback.png": "/Michael/static/media/headerback.bb292a2b12f7299ba8fa.png",
     "static/media/aboutback.png": "/Michael/static/media/aboutback.6b577262a2f2a5934fc1.png",
+    "static/media/power.png": "/Michael/static/media/power.ecdbca437246c335d921.png",
     "static/media/projectsback.png": "/Michael/static/media/projectsback.55a6fdd0e697b0444d84.png",
     "index.html": "/Michael/index.html",
-    "main.ca59a0a8.css.map": "/Michael/static/css/main.ca59a0a8.css.map",
-    "main.e0c6aa4c.js.map": "/Michael/static/js/main.e0c6aa4c.js.map"
+    "main.efccd8c9.css.map": "/Michael/static/css/main.efccd8c9.css.map",
+    "main.0d85fac5.js.map": "/Michael/static/js/main.0d85fac5.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca59a0a8.css",
-    "static/js/main.e0c6aa4c.js"
+    "static/css/main.efccd8c9.css",
+    "static/js/main.0d85fac5.js"
   ]
 }
