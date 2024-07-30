@@ -15,6 +15,11 @@
     border-right: 5px solid;
     white-space: nowrap;
     overflow: hidden;
+    visibility: hidden;
+}
+
+.titleprojects.visible {
+    visibility: visible;
     animation:
         typing 2s steps(16),
         cursor .5s step-end infinite alternate;
@@ -48,6 +53,20 @@
 
 .folder {
     margin-left: 80px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.folder.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+.folder.hidden {
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 #folderfirst {
@@ -131,9 +150,10 @@
     margin-left: 30px;
 }
 
+
 @media only screen and (max-width: 900px) {
     .titleprojects {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
     .projectsfirstline {
@@ -150,7 +170,7 @@
     }
 
     .folder {
-        margin-top: 50px;
+        margin-top: 30px;
         margin-left: 0px;
         padding-left: 20px;
         padding-right: 20px;

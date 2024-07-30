@@ -1,5 +1,6 @@
 import './Header.css'
 import Gojo from '../../Assets/gojo.png'
+import Power from '../../Assets/power.png'
 import Button from '../../Assets/button.png'
 import ButtonHover from '../../Assets/button-hover.png'
 import { useState } from 'react';
@@ -15,6 +16,29 @@ const Header = () => {
     } else {
       setButtonSrc(Button);
     }
+  };
+
+  const handleGojoClick = (event) => {
+    const gojoElement = document.getElementById('gojo');
+    if (!gojoElement) return;
+
+    const img = document.createElement('img');
+    img.src = Power;
+    img.className = 'moving-image';
+
+    const rect = gojoElement.getBoundingClientRect();
+    img.style.top = `${rect.top + window.scrollY}px`;
+    img.style.left = `${rect.left + window.scrollX}px`;
+
+    document.body.appendChild(img);
+
+    requestAnimationFrame(() => {
+      img.style.transform = `translate(0, 0)`;
+    });
+
+    img.addEventListener('animationend', () => {
+      img.remove();
+    });
   };
 
   return (
@@ -35,7 +59,7 @@ const Header = () => {
                 /> 
               </a>
           </div>
-          <img id="gojo" src={Gojo} alt="gojo satoru" />
+          <img id="gojo" src={Gojo} alt="gojo satoru" onClick={handleGojoClick}/>
       </div>
     </div>
   )

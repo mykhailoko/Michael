@@ -14,6 +14,11 @@
     border-right: 5px solid;
     white-space: nowrap;
     overflow: hidden;
+    visibility: hidden;
+}
+
+.title.visible {
+    visibility: visible;
     animation:
         typing 2s steps(16),
         cursor .5s step-end infinite alternate;
@@ -85,6 +90,14 @@
 .tech {
     display: flex;
     margin-bottom: 35px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.tech.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .techright {
