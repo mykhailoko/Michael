@@ -29,7 +29,6 @@ const Projects = () => {
     const titleNode = titleRef.current;
     if (titleNode) observer.observe(titleNode);
 
-    // Create a local copy of folderRefs.current
     const currentFolderRefs = folderRefs.current;
     currentFolderRefs.forEach(folder => {
       if (folder) observer.observe(folder);
@@ -86,12 +85,15 @@ const Projects = () => {
         <div className={`folder ${visibleSections.includes(folderRefs.current[2]) ? 'visible' : 'hidden'}`} 
           ref={(el) => folderRefs.current[2] = el}>
           <img className="foldericon" src={FolderIcon} alt="foldericon" />
-          <a href="https://github.com/mykhailoko/Dino-Adventure" target="_blank" rel="noreferrer">
+          <a href="https://github.com/mykhailoko/Rock-Paper-Scissors" target="_blank" rel="noreferrer">
             <img className="githubicon" src={GithubIcon} alt="githubicon" />
           </a>
-          <h2 className="foldertitle">Dino Adventure with Unity</h2>
-          <p className="foldertext">{t("projects.unity")}</p>
-          <p className="foldertechno">Unity, C#</p>
+          <a href="https://mykhailoko.github.io/Rock-Paper-Scissors/" target="_blank" rel="noreferrer">
+            <img className="linkicon" src={LinkIcon} alt="linkicon" />
+          </a>
+          <h2 className="foldertitle">Rock Paper Scissors</h2>
+          <p className="foldertext">{t("projects.rock")}</p>
+          <p className="foldertechno">HTML, CSS, JavaScript</p>
           <img className="folderback" src={FolderBack} alt="folder" />
         </div>
       </div>
