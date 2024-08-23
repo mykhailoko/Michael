@@ -60,14 +60,14 @@ const About = () => {
               </div>
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">Unity, C#</h4>
+                <h4 className="techno">JavaScript</h4>
               </div>
             </div>
 
             <div className="techright">
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">React JS</h4>
+                <h4 className="techno">ReactJS</h4>
               </div>
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
