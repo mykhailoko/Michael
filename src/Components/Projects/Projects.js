@@ -117,14 +117,15 @@ const Projects = () => {
         <div className={`folder ${visibleSections.includes(folderRefs.current[4]) ? 'visible' : 'hidden'}`} 
           ref={(el) => folderRefs.current[4] = el}>
           <img className="foldericon" src={FolderIcon} alt="foldericon" />
-          <a href="https://github.com/mykhailoko/LeetCode" target="_blank" rel="noreferrer">
+          <a href="https://github.com/mykhailoko/todo-list" target="_blank" rel="noreferrer">
             <img className="githubicon" src={GithubIcon} alt="githubicon" />
           </a>
-          <a href="https://leetcode.com/u/michaelko_/" target="_blank" rel="noreferrer">
+          <a href="https://mykhailoko.github.io/todo-list/" target="_blank" rel="noreferrer">
             <img className="linkicon" src={LinkIcon} alt="linkicon" />
           </a>
-          <h2 className="foldertitle">Leetcode</h2>
-          <p className="foldertextsmall">{t("projects.leetcode")}</p>
+          <h2 className="foldertitle">To-Do List</h2>
+          <p className="foldertextsmall">{t("projects.todo")}</p>
+          <p className="foldertechnosmall">React.js</p>
           <img className="folderback" src={FolderBack} alt="folder" />
         </div>
       </div>

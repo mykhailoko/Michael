@@ -16,6 +16,6 @@
         "website": "This site was created using HTML and CSS, with a custom design created in Photoshop. Download the Dino Adventure game here.",
         "rock": "The game site is built with HTML, CSS, and JavaScript, offering a responsive experience for both computers and phones.",
         "michael": "Built with React.js, this site showcases my programming projects, skills, and accomplishments.",
-        "leetcode": "I also enjoy solving LeetCode problems, which help me enhance my coding skills through various programming challenges."
+        "todo": "React To-Do List for managing tasks with separate lists, customizable icons, and light/dark themes."
     }
 }

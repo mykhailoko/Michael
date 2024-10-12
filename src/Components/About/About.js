@@ -9,7 +9,7 @@ const About = () => {
 
   const [visibleSections, setVisibleSections] = useState([]);
   const aboutRef = useRef(null);
-  const techRef = useRef(null); // Новый реф для секции технологий
+  const techRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
