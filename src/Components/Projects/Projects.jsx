@@ -78,7 +78,7 @@ const Projects = () => {
           </a>
           <h2 className="foldertitle">Dino Adventure website</h2>
           <p className="foldertext">{t("projects.website")}</p>
-          <p className="foldertechno">HTML, CSS, Photoshop</p>
+          <p className="foldertechno">HTML, CSS</p>
           <img className="folderback" src={FolderBack} alt="folder" />
         </div>
 
@@ -110,7 +110,7 @@ const Projects = () => {
           </a>
           <h2 className="foldertitle">Portfolio website</h2>
           <p className="foldertextsmall">{t("projects.michael")}</p>
-          <p className="foldertechnosmall">React.js, Photoshop</p>
+          <p className="foldertechnosmall">React.js, Three.js</p>
           <img className="folderback" src={FolderBack} alt="folder" />
         </div>
 

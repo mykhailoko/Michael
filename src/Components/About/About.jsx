@@ -52,30 +52,30 @@ const About = () => {
             <div className="techleft">
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">C++</h4>
-              </div>
-              <div className="technodev">
-                <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">Python, Pygame</h4>
-              </div>
-              <div className="technodev">
-                <img className="technopoint" src={Point} alt="point" />
                 <h4 className="techno">JavaScript</h4>
+              </div>
+              <div className="technodev">
+                <img className="technopoint" src={Point} alt="point" />
+                <h4 className="techno">Python</h4>
+              </div>
+              <div className="technodev">
+                <img className="technopoint" src={Point} alt="point" />
+                <h4 className="techno">React.js</h4>
               </div>
             </div>
 
             <div className="techright">
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">ReactJS</h4>
+                <h4 className="techno">Node.js</h4>
               </div>
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">HTML, CSS</h4>
+                <h4 className="techno">Express.js</h4>
               </div>
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">Photoshop, Figma</h4>
+                <h4 className="techno">MongoDB</h4>
               </div>
             </div>
           </div>
