@@ -11,7 +11,7 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
-  const { nodes, materials } = useGLTF('/computer.gltf')
+  const { nodes, materials } = useGLTF('./computer.gltf')
   return (
     <group {...props} dispose={null}>
       <group position={[-0.059, 0.095, -0.025]} scale={0.138}>
@@ -46,4 +46,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/computer.gltf')
+useGLTF.preload('./computer.gltf')
