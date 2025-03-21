@@ -1,0 +1,144 @@
+.about {
+    background-image: url("../../Assets/aboutback.png");
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 110px;
+}
+
+.title {
+    font-size: 35px;
+    color: #d3d3d3;
+    font-weight: bold; 
+    margin-bottom: 20px;
+    width: 185px;
+    border-right: 5px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.title.visible {
+    visibility: visible;
+    animation:
+        typing 2s steps(16),
+        cursor .5s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+.title>span {
+    color: #80248d;
+}
+
+.aboutmain {
+    margin-top: 50px;
+    display: flex;
+}
+
+.abouttext {
+    font-size: 20px;
+    color: #d3d3d3;
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+.abouttext>span {
+    color: #80248d;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #80248d;
+    font-weight: bold;
+}
+
+#gojo-about {
+    margin-left: 110px;
+}
+
+.techno {
+    color: #d3d3d3;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.technopoint {
+    width: 13px;
+    height: 13px;
+    margin-top: 7px;
+}
+
+.technologies {
+    display: block;
+    margin-top: 25px;
+    margin-left: 200px;
+}
+
+.technodev {
+    display: flex;
+    margin-top: 20px;
+}
+
+.tech {
+    display: flex;
+    margin-bottom: 35px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.tech.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.techright {
+    margin-left: 80px;
+}
+
+@media only screen and (max-width: 900px) {
+    #gojo-about {
+        margin-left: 17%;
+        width: 65%;
+        height: 65%
+    }
+
+    .aboutmain {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        padding-bottom: 40px;
+    }
+
+    .technologies {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+
+    .title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .abouttext {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .techleft {
+        margin-left: 7%;
+    }
+
+}
