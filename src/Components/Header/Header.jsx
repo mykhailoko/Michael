@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 import { useTranslation  } from 'react-i18next';
 import { Canvas } from '@react-three/fiber';
 import { Environment, OrbitControls } from '@react-three/drei';
-import Computer from '../../../public/Computer';
+import ComputerOptimized from '../../../public/Computer';
 
 const Header = () => {
   const[t] = useTranslation("global");
@@ -16,7 +16,7 @@ const Header = () => {
               <ambientLight intensity={1} />
               <OrbitControls enableZoom={false} />
               <Suspense fallback={null}>
-                <Computer scale={[7.2, 7.2, 7.2]} rotation={[Math.PI / 7, -Math.PI / 7, 0]} position={[0, -0.7, 0]} />
+                <ComputerOptimized scale={[7.2, 7.2, 7.2]} rotation={[Math.PI / 7, -Math.PI / 7, 0]} position={[0, -0.7, 0]} />
               </Suspense>
               <Environment preset='sunset' />
             </Canvas>
@@ -33,7 +33,7 @@ const Header = () => {
             <ambientLight intensity={1} />
             <OrbitControls enableZoom={false} />
             <Suspense fallback={null}>
-              <Computer scale={[6.7, 6.7, 6.7]} rotation={[Math.PI / 7, -Math.PI / 7, 0]} />
+              <ComputerOptimized scale={[6.7, 6.7, 6.7]} rotation={[Math.PI / 7, -Math.PI / 7, 0]} />
             </Suspense>
             <Environment preset='sunset' />
           </Canvas>
