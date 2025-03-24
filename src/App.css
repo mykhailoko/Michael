@@ -10,3 +10,7 @@
   flex-direction: column;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+select, option {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

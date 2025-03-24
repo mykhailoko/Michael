@@ -1,9 +1,9 @@
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
+import Navbar from './Components/Navbar'
 import Header from './Components/Header/Header'
 import About from './Components/About/About'
 import Projects from './Components/Projects/Projects'
-import Footer from './Components/Footer/Footer'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (

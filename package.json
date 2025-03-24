@@ -19,6 +19,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",
+    "sass": "^1.86.0",
     "three": "^0.174.0"
   },
   "devDependencies": {
