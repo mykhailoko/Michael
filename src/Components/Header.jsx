@@ -1,9 +1,9 @@
-import './Header.css';
+import '../Styles/Header.scss';
 import { Suspense } from 'react';
 import { useTranslation  } from 'react-i18next';
 import { Canvas } from '@react-three/fiber';
 import { Environment, OrbitControls } from '@react-three/drei';
-import Computer from '../../../public/Computer';
+import Computer from '../../public/Computer';
 
 const Header = () => {
   const[t] = useTranslation("global");
@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className="header" id="home">
       <div className="mainpart">
-          <div className="mainparttext">
+          <div className="mainpart-phone">
             <Canvas id='computerCanvasPhone'>
               <ambientLight intensity={1} />
               <OrbitControls enableZoom={false} />
@@ -20,8 +20,8 @@ const Header = () => {
               </Suspense>
               <Environment preset='sunset' />
             </Canvas>
-              <h2 className="firsttext">hi, I'm <span>Michael</span>.</h2>
-              <p className="secondtext">
+              <h2 className="first-text">hi, I'm <span>Michael</span>.</h2>
+              <p className="second-text">
                 {t("header.message")}
               </p>
               <a href="https://github.com/mykhailoko" target="_blank" rel="noreferrer">

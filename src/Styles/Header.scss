@@ -1,5 +1,7 @@
+@use 'variables' as *;
+
 .header {
-    background-image: url("../../Assets/headerback.png");
+    background-image: url("../Assets/headerback.png");
     background-size: cover;
     height: 100vh;
 }
@@ -8,17 +10,17 @@
     display: flex;
     justify-content: center;
     gap: 150px;
-}
 
-.mainparttext {
-    padding-top: 200px;
-    padding-left: 85px;
+    &-phone {
+        padding-left: 85px;
+        padding-top: 200px;
+    }
 }
   
-.firsttext {
+.first-text {
     font-weight: bold; 
     font-size: 55px;
-    color: #d3d3d3;
+    color: $primary-color;
     margin-bottom: 20px;
     width: 410px;
     border-right: 5px solid;
@@ -27,6 +29,10 @@
     animation:
         typing 2s steps(16),
         cursor .5s step-end infinite alternate;
+
+    span {
+        color: $secondary-color;
+    }
 }
 
 @keyframes cursor {
@@ -37,12 +43,7 @@
     from { width: 0 }
 }
 
-.firsttext>span {
-    color: #80248d;
-}
-
-.secondtext {
-    font-weight: regular; 
+.second-text {
     font-size: 22px;
     color: #d3d3d3;
     margin-top: 0px;
@@ -51,20 +52,20 @@
 }
 
 .check-out {
-    border: 4px solid #80248d;
-    padding: 17px 45px;
-    border-radius: 50px;
-    color: #80248d;
     font-size: 20px;
     font-weight: bold;
+    color: $secondary-color;
+    padding: 17px 45px;
+    border: 4px solid $secondary-color;
+    border-radius: 50px;
     background: transparent;
     cursor: pointer;
-}
 
-.check-out:hover {
-    border: 4px solid transparent;
-    color: #d3d3d3;
-    background: #80248d;
+    &:hover {
+        border: 4px solid transparent;
+        color: $primary-color;
+        background: $secondary-color;
+    }
 }
 
 #computerCanvas {
@@ -78,30 +79,28 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .mainparttext {
-        text-align: center;
-        padding-left: 0px;
-        padding-top: 60px;
-    }
-
-    .firsttext {
-        font-size: 40px;
-        width: 310px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 7%;
-    }
-
-    .secondtext {
-        font-size: 120%;
-        margin-bottom: 7%;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%
-    }
-
     .mainpart {
         flex-direction: column;
+
+        &-phone {
+            text-align: center;
+            padding-left: 0px;
+            padding-top: 60px;
+        }
+    }
+
+    .first-text {
+        font-size: 40px;
+        margin-bottom: 7%;
+        margin: 0 auto;
+        width: 310px;
+    }
+
+    .second-text {
+        font-size: 120%;
+        margin-bottom: 7%;
+        margin: 0 auto;
+        width: 90%
     }
 
     #computerCanvas {
@@ -118,7 +117,6 @@
 
 @media only screen and (max-width: 500px) {
     #computerCanvasPhone {
-        height: 400px !important;
         width: 400px !important;
     }
 }
