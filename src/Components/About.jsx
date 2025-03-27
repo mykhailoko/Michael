@@ -1,6 +1,6 @@
-import './About.css'
-import GojoAbout from '../../Assets/gojo-about.png'
-import Point from '../../Assets/point.png'
+import '../Styles/About.scss'
+import GojoAbout from '../Assets/gojo-about.png'
+import Point from '../Assets/point.png'
 import { useTranslation  } from 'react-i18next';
 import React, { useEffect, useState, useRef } from 'react';
 

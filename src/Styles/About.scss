@@ -1,39 +1,24 @@
+@use 'variables' as *;
+
 .about {
-    background-image: url("../../Assets/aboutback.png");
+    background-image: url("../Assets/aboutback.png");
     background-size: cover;
-    padding-top: 70px;
-    padding-bottom: 110px;
+    padding: 70px 0px 100px;
 }
 
 .title {
     font-size: 35px;
-    color: #d3d3d3;
-    font-weight: bold; 
-    margin-bottom: 20px;
     width: 185px;
-    border-right: 5px solid;
-    white-space: nowrap;
-    overflow: hidden;
     visibility: hidden;
-}
 
-.title.visible {
-    visibility: visible;
-    animation:
-        typing 2s steps(16),
-        cursor .5s step-end infinite alternate;
-}
+    @include typing;
 
-@keyframes cursor {
-    50% { border-color: transparent }
-}
-
-@keyframes typing {
-    from { width: 0 }
-}
-
-.title>span {
-    color: #80248d;
+    &.visible {
+        visibility: visible;
+        animation:
+            typing 2s steps(16),
+            cursor .5s step-end infinite alternate;
+    }
 }
 
 .aboutmain {
@@ -43,18 +28,18 @@
 
 .abouttext {
     font-size: 20px;
-    color: #d3d3d3;
+    color: $primary-color;
     width: 600px;
     margin-bottom: 10px;
-}
 
-.abouttext>span {
-    color: #80248d;
-    font-weight: bold;
+    span {
+        color: $secondary-color;
+        font-weight: bold;
+    }
 }
 
 .highlight {
-    color: #80248d;
+    color: $secondary-color;
     font-weight: bold;
 }
 
@@ -63,11 +48,9 @@
 }
 
 .techno {
-    color: #d3d3d3;
+    color: $primary-color;
     font-size: 18px;
-    margin-left: 15px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px 0px 0px 15px;
 }
 
 .technopoint {
@@ -93,11 +76,11 @@
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 1s ease, transform 1s ease;
-}
 
-.tech.visible {
-    opacity: 1;
-    transform: translateY(0);
+    &.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .techright {
@@ -107,38 +90,36 @@
 @media only screen and (max-width: 900px) {
     #gojo-about {
         margin-left: 17%;
+        margin-bottom: 10px;
         width: 65%;
         height: 65%
     }
 
     .aboutmain {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         align-items: center;
-        justify-content: center;
         display: block;
         padding-bottom: 40px;
     }
 
     .technologies {
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
         align-items: center;
+        gap: 15px;
+    }
+
+    .tech {
+        margin-bottom: 15px;
     }
 
     .title {
-        margin-left: auto;
-        margin-right: auto;
+        margin-bottom: 5px;
     }
 
     .abouttext {
         width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
     }
-
-    .techleft {
-        margin-left: 7%;
-    }
-
 }

@@ -18,29 +18,13 @@
 }
   
 .first-text {
-    font-weight: bold; 
     font-size: 55px;
-    color: $primary-color;
-    margin-bottom: 20px;
     width: 410px;
-    border-right: 5px solid;
-    white-space: nowrap;
-    overflow: hidden;
     animation:
         typing 2s steps(16),
         cursor .5s step-end infinite alternate;
 
-    span {
-        color: $secondary-color;
-    }
-}
-
-@keyframes cursor {
-    50% { border-color: transparent }
-}
-
-@keyframes typing {
-    from { width: 0 }
+    @include typing;
 }
 
 .second-text {
@@ -80,26 +64,26 @@
 
 @media only screen and (max-width: 900px) {
     .mainpart {
-        flex-direction: column;
-
         &-phone {
+            display: flex;
+            flex-direction: column;
             text-align: center;
             padding-left: 0px;
-            padding-top: 60px;
+            padding-top: 50px;
+            gap: 15px;
         }
     }
 
     .first-text {
         font-size: 40px;
-        margin-bottom: 7%;
         margin: 0 auto;
         width: 310px;
     }
 
     .second-text {
         font-size: 120%;
-        margin-bottom: 7%;
         margin: 0 auto;
+        margin-bottom: 10px;
         width: 90%
     }
 
