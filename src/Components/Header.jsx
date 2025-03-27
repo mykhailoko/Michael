@@ -16,7 +16,7 @@ const Header = () => {
               <ambientLight intensity={1} />
               <OrbitControls enableZoom={false} />
               <Suspense fallback={null}>
-                <Computer scale={[0.65, 0.65, 0.65]} rotation={[Math.PI / 7, -Math.PI / 7, 0]} position={[0, 0, 0]} />
+                <Computer scale={[0.65, 0.65, 0.65]} rotation={[Math.PI / 7, -Math.PI / 7, 0]} position={[0, -0.4, 0]} />
               </Suspense>
               <Environment preset='sunset' />
             </Canvas>

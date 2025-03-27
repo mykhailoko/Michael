@@ -1,8 +1,8 @@
-import './Projects.css'
-import FolderBack from '../../Assets/folder.png'
-import FolderIcon from '../../Assets/foldericon.png'
-import GithubIcon from '../../Assets/github.png'
-import LinkIcon from '../../Assets/linkicon.png'
+import '../Styles/Projects.scss'
+import FolderBack from '../Assets/folder.png'
+import FolderIcon from '../Assets/foldericon.png'
+import GithubIcon from '../Assets/github.png'
+import LinkIcon from '../Assets/linkicon.png'
 import { useTranslation } from 'react-i18next';
 import React, { useEffect, useState, useRef } from 'react';
 

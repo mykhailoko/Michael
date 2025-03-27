@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Header from './Components/Header'
 import About from './Components/About'
-import Projects from './Components/Projects/Projects'
+import Projects from './Components/Projects'
 import Footer from './Components/Footer'
 
 const App = () => {
