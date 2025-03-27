@@ -1,4 +1,4 @@
-import './App.css'
+import './Styles/App.scss'
 import Navbar from './Components/Navbar'
 import Header from './Components/Header'
 import About from './Components/About'
