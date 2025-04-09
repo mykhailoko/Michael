@@ -2,23 +2,6 @@
 
 .projects {
     background: $background-color;
-    padding-top: 70px;
-}
-
-.titleprojects {
-    margin: 0 auto;
-    font-size: 35px;
-    width: 150px;
-    visibility: hidden;
-
-    @include typing;
-
-    &.visible {
-        visibility: visible;
-        animation:
-            typing 2s steps(16),
-            cursor .5s step-end infinite alternate;
-    }
 }
 
 .projectsfirstline, .projectssecondline {
@@ -119,10 +102,6 @@
 
 
 @media only screen and (max-width: 900px) {
-    .titleprojects {
-        margin-bottom: 30px;
-    }
-
     .projectsfirstline, .projectssecondline {
         margin-top: 0px;
         display: flex;

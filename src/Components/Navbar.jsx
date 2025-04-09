@@ -47,7 +47,7 @@ const Navbar = () => {
   };
   
   return (
-    <div className="navbar">
+    <div className="custom-navbar">
       <img className="reorder-icon" src={Reorder} alt="reorder" onClick={toggleMenu} />
       <div className={`reorder ${isOpen ? "is-open" : ""}`}>
         <a 

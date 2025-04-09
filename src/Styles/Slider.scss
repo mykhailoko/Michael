@@ -1,0 +1,128 @@
+@use 'variables' as *;
+
+.slider {
+    background: $background-color;
+}
+
+.carousel {
+    margin: 40px auto 0px;
+    max-width: 1000px;
+    padding-bottom: 55px;
+
+    .carousel-inner {
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+    .carousel-item img {
+        border-radius: 30px;
+    }
+}
+
+.titleprojects {
+    margin: 70px auto;
+    font-size: 35px;
+    width: 150px;
+    visibility: hidden;
+
+    @include typing;
+
+    &.visible {
+        visibility: visible;
+        animation:
+            typing 2s steps(16),
+            cursor .5s step-end infinite alternate;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+    .icons-image {
+        width: 20px !important;
+        height: 20px !important;
+        border-radius: 0px !important;
+        cursor: pointer;
+        box-shadow: 0 4px 4px 0 rgba(0 0 0 / 40%);
+    }
+}
+
+.carousel-caption {
+    p {
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 0.4rem;
+        text-shadow: 0 4px 4px rgba(0 0 0 / 40%);
+    }
+
+    h3 {
+        text-shadow: 0 4px 4px rgba(0 0 0 / 40%);
+    }
+}
+
+.used-technologies {
+    font-size: 20px;
+    font-weight: 500;
+    color: $secondary-color;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important; 
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  border: solid white;
+  border-width: 0 7px 7px 0; 
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(135deg);
+}
+
+.carousel-control-next-icon {
+  transform: rotate(-45deg);
+}
+
+
+@media only screen and (max-width: 900px) {
+    .titleprojects {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .carousel-caption {
+        p {
+            width: 400px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel {
+        .carousel-item img {
+            object-fit: cover;
+            height: 80vh;
+            width: auto !important;
+        }
+    }
+    
+
+    .carousel-caption {
+        font-size: 12px;
+
+        p {
+            width: 300px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-caption {
+        p {
+            width: 200px;
+        }
+    }
+}

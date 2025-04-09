@@ -9,7 +9,6 @@ import React, { useEffect, useState, useRef } from 'react';
 const Projects = () => {
   const [t] = useTranslation("global");
 
-  const titleRef = useRef(null);
   const folderRefs = useRef([]);
 
   const [visibleSections, setVisibleSections] = useState([]);
@@ -25,9 +24,6 @@ const Projects = () => {
       },
       { threshold: 0.1 }
     );
-    
-    const titleNode = titleRef.current;
-    if (titleNode) observer.observe(titleNode);
 
     const currentFolderRefs = folderRefs.current;
     currentFolderRefs.forEach(folder => {
@@ -35,7 +31,6 @@ const Projects = () => {
     });
 
     return () => {
-      if (titleNode) observer.unobserve(titleNode);
       currentFolderRefs.forEach(folder => {
         if (folder) observer.unobserve(folder);
       });
@@ -43,27 +38,20 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="projects" id="projects"> 
-      <h2 
-        className={`titleprojects ${visibleSections.includes(titleRef.current) ? 'visible' : ''}`}
-        ref={titleRef}
-      >
-        Projects<span>.</span>
-      </h2>
-
+    <div className="projects"> 
       <div className="projectsfirstline">
         <div className={`folder ${visibleSections.includes(folderRefs.current[0]) ? 'visible' : 'hidden'}`} 
           ref={(el) => folderRefs.current[0] = el} id="folderfirst">
           <img className="foldericon" src={FolderIcon} alt="foldericon" />
-          <a href="https://github.com/mykhailoko/Dino-Adventure-pygame" target="_blank" rel="noreferrer">
+          <a href="https://github.com/mykhailoko/rocket-game" target="_blank" rel="noreferrer">
             <img className="githubicon" src={GithubIcon} alt="githubicon" />
           </a>
-          <a href="https://github.com/mykhailoko/Dino-Adventure-pygame/releases/tag/v1.0.0" target="_blank" rel="noreferrer">
+          <a href="https://mykhailoko.github.io/rocket-game/" target="_blank" rel="noreferrer">
             <img className="linkicon" src={LinkIcon} alt="linkicon" />
           </a>
-          <h2 className="foldertitle">Dino Adventure with pygame</h2>
-          <p className="foldertext">{t("projects.pygame")}</p>
-          <p className="foldertechno">Python, Pygame</p>
+          <h2 className="foldertitle">Rocket landing on the Moon</h2>
+          <p className="foldertext">{t("projects.rocket")}</p>
+          <p className="foldertechno">Vite, JavaScript, custom physics formulas</p>
           <img className="folderback" src={FolderBack} alt="folder" />
         </div>
 
@@ -102,30 +90,30 @@ const Projects = () => {
       <div className={`folder ${visibleSections.includes(folderRefs.current[3]) ? 'visible' : 'hidden'}`} 
           ref={(el) => folderRefs.current[3] = el} id="folderfirst">
           <img className="foldericon" src={FolderIcon} alt="foldericon" />
-          <a href="https://github.com/mykhailoko/Michael" target="_blank" rel="noreferrer">
+          <a href="https://github.com/mykhailoko/animated-slider" target="_blank" rel="noreferrer">
             <img className="githubicon" src={GithubIcon} alt="githubicon" />
           </a>
-          <a href="https://mykhailoko.github.io/Michael/" target="_blank" rel="noreferrer">
+          <a href="https://mykhailoko.github.io/animated-slider/" target="_blank" rel="noreferrer">
             <img className="linkicon" src={LinkIcon} alt="linkicon" />
           </a>
-          <h2 className="foldertitle">Portfolio website</h2>
-          <p className="foldertextsmall">{t("projects.michael")}</p>
-          <p className="foldertechnosmall">React.js, Three.js</p>
+          <h2 className="foldertitle">Animated Slider</h2>
+          <p className="foldertextsmall">{t("projects.burger")}</p>
+          <p className="foldertechnosmall">React.js</p>
           <img className="folderback" src={FolderBack} alt="folder" />
         </div>
 
         <div className={`folder ${visibleSections.includes(folderRefs.current[4]) ? 'visible' : 'hidden'}`} 
           ref={(el) => folderRefs.current[4] = el}>
           <img className="foldericon" src={FolderIcon} alt="foldericon" />
-          <a href="https://github.com/mykhailoko/todo-list" target="_blank" rel="noreferrer">
+          <a href="https://github.com/mykhailoko/Solar-System" target="_blank" rel="noreferrer">
             <img className="githubicon" src={GithubIcon} alt="githubicon" />
           </a>
-          <a href="https://mykhailoko.github.io/todo-list/" target="_blank" rel="noreferrer">
+          <a href="https://mykhailoko.github.io/Solar-System/" target="_blank" rel="noreferrer">
             <img className="linkicon" src={LinkIcon} alt="linkicon" />
           </a>
-          <h2 className="foldertitle">To-Do List</h2>
-          <p className="foldertextsmall">{t("projects.todo")}</p>
-          <p className="foldertechnosmall">React.js</p>
+          <h2 className="foldertitle">Solar System</h2>
+          <p className="foldertextsmall">{t("projects.solar")}</p>
+          <p className="foldertechnosmall">Three.js, ESLint</p>
           <img className="folderback" src={FolderBack} alt="folder" />
         </div>
       </div>
