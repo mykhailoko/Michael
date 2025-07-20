@@ -5,10 +5,10 @@
         "projects": "Projects"
     },
     "header": {
-        "message": "I am a software engineer in my second year of university. I love creating websites, apps, and games, enjoying every challenge and the creative process."
+        "message": "I am a software engineer, a third-year university student. I love creating websites, apps, and games, enjoying every challenge and the creative process."
     },
     "about": {
-        "maintext": "I am a software engineer in my second year of university. I love creating websites, apps, and games, enjoying every challenge and the creative process. Technologies I've worked with:",
+        "maintext": "I am a software engineer, a third-year university student. I love creating websites, apps, and games, enjoying every challenge and the creative process. Technologies I've worked with:",
         "animetext": "Outside of my studies, I enjoy watching anime, especially <span class='highlight'>Jujutsu Kaisen</span>, Demon Slayer and Attack on Titan."
     },
     "slider": {
