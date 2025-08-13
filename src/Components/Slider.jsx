@@ -101,9 +101,6 @@ function Slider() {
                                 <a href="https://github.com/mykhailoko/Devora" target="_blank" rel="noreferrer">
                                     <img src={GithubIcon} alt='github' className='icons-image' />
                                 </a>
-                                <a href="https://devora-frontend.onrender.com/" target="_blank" rel="noreferrer">
-                                    <img src={LinkIcon} alt='link' className='icons-image' />
-                                </a>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
