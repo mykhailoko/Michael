@@ -19,7 +19,7 @@
     },
     "projects": {
         "rocket": "A rocket landing game on the Moon with custom physics including thrust and acceleration calculations, built with Vite.",
-        "website": "This site was created using HTML and CSS, with a custom design created in Photoshop. Download the Dino Adventure game here.",
+        "website": "This site is built with HTML and CSS, featuring a custom Photoshop design. Download the Dino Adventure game here.",
         "rock": "The game site is built with HTML, CSS, and JavaScript, offering a responsive experience for both computers and phones.",
         "burger": "A fast food cafe website with an animated slider and a menu where users can add items to their cart.",
         "solar": "A website featuring 3D planets created with Three.js, built using plain HTML, CSS, and JavaScript, with ESLint for code quality."
