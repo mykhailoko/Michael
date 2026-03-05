@@ -13,7 +13,7 @@
     },
     "slider": {
         "dino": "The game, inspired by Chrome's offline dinosaur game, features custom graphics created with Photoshop and unique features not found in the classic version.",
-        "devora": "The platform where anyone can share startup ideas, build a team, connect with others, and collaborate through profiles and chat.",
+        "kanban": "Interactive Kanban board built on React and TypeScript that lets you create, delete, edit, and drag and drop tasks between columns.",
         "michael": "The website highlights my programming projects, skills, and 3D object using Three.js.",
         "todo": "Todo List for managing tasks with separate lists, customizable icons, and light/dark themes."
     },

@@ -56,7 +56,7 @@ const About = () => {
               </div>
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">Python</h4>
+                <h4 className="techno">TypeScript</h4>
               </div>
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
@@ -75,7 +75,7 @@ const About = () => {
               </div>
               <div className="technodev">
                 <img className="technopoint" src={Point} alt="point" />
-                <h4 className="techno">MongoDB</h4>
+                <h4 className="techno">Python</h4>
               </div>
             </div>
           </div>

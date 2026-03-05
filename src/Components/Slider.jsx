@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Portfolio from '../Assets/portfolio.png';
 import TodoList from '../Assets/todo-list.png';
-import Devora from '../Assets/devora.png';
+import Kanban from '../Assets/kanban-board.png';
 import DinoAdventure from '../Assets/dino-adventure.png';
 import GithubIcon from '../Assets/github-white.png';
 import LinkIcon from '../Assets/linkicon-white.png';
@@ -90,12 +90,12 @@ function Slider() {
                     <Carousel.Item>
                         <img 
                             className="d-block w-100"
-                            src={Devora} 
-                            alt="devora" 
+                            src={Kanban} 
+                            alt="kanban-board" 
                         />
                         <Carousel.Caption>
-                            <h3>Devora</h3>
-                            <p>{t("slider.devora")}</p>
+                            <h3>Kanban Board</h3>
+                            <p>{t("slider.kanban")}</p>
                             <p className='used-technologies'>MERN Stack</p>
                             <div className='icons'>
                                 <a href="https://github.com/mykhailoko/Devora" target="_blank" rel="noreferrer">
