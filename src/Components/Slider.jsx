@@ -98,8 +98,11 @@ function Slider() {
                             <p>{t("slider.kanban")}</p>
                             <p className='used-technologies'>TypeScript, Zustand</p>
                             <div className='icons'>
-                                <a href="https://github.com/mykhailoko/Devora" target="_blank" rel="noreferrer">
+                                <a href="https://github.com/mykhailoko/kanban-board" target="_blank" rel="noreferrer">
                                     <img src={GithubIcon} alt='github' className='icons-image' />
+                                </a>
+                                <a href="https://mykhailoko.github.io/kanban-board/" target="_blank" rel="noreferrer">
+                                    <img src={LinkIcon} alt='link' className='icons-image' />
                                 </a>
                             </div>
                         </Carousel.Caption>
