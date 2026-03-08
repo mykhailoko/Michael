@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../Styles/Slider.scss';
-import Carousel from git 
+import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Portfolio from '../Assets/portfolio.png';
 import TodoList from '../Assets/todo-list.png';
